@@ -7,6 +7,7 @@
 @import "./section";
 @import "./footer";
 @import "./miniSection";
+@import "./contact";
 
 
 // reset all content
@@ -33,7 +34,7 @@ form{
     @include flex-col;
     gap: 1rem;
     padding: $l-pad $s-pad;
-    box-shadow: 0 5px 5px 0 rgba(0 0 0 / 0.2);
+    box-shadow: 2px 5px 5px 0 rgba(0 0 0 / 0.2);
     text-align: center;
     border-radius: $m-border-radius;
 

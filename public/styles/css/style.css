@@ -21,7 +21,6 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  color: #BDD9E2;
 }
 @media only screen and (max-width: 800px) {
   h2 {
@@ -141,6 +140,11 @@ nav {
   background-color: #E0EBEC;
   padding: 1rem;
 }
+@media only screen and (max-width: 800px) {
+  nav {
+    padding-inline: 0.5rem;
+  }
+}
 nav #nav {
   margin: auto;
   display: flex;
@@ -150,8 +154,19 @@ nav #nav {
   width: 80%;
   justify-content: space-between;
 }
+@media only screen and (max-width: 800px) {
+  nav #nav {
+    gap: 0.5rem;
+    width: 100%;
+  }
+}
 nav #nav h1 {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  nav #nav h1 {
+    font-size: 1rem;
+  }
 }
 nav #nav ul {
   margin: auto;
@@ -161,15 +176,25 @@ nav #nav ul {
   gap: 1rem;
   gap: 2rem;
 }
+@media only screen and (max-width: 800px) {
+  nav #nav ul {
+    gap: 1rem;
+  }
+}
 nav #nav ul li {
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px) {
+  nav #nav ul li {
+    font-size: 0.8rem;
+  }
 }
 nav #nav ul li:hover {
   text-decoration: underline;
 }
 
 header {
-  background-image: url("/header5.jpg");
+  background-image: url("/header4.jpg");
   height: 95vh;
   background-position: center;
   background-size: cover;
@@ -187,13 +212,28 @@ header div {
 }
 header div h1 {
   font-size: 3.5rem;
-  color: #BDD9E2;
+  color: #E0EBEC;
+  text-align: center;
+  text-shadow: 5px 5px #1B201E;
+}
+@media only screen and (max-width: 800px) {
+  header div h1 {
+    font-size: 2rem;
+    text-shadow: 3px 3px #1B201E;
+  }
 }
 header div h2 {
-  color: #1B201E;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 2px 2px #1B201E;
+}
+@media only screen and (max-width: 800px) {
+  header div h2 {
+    font-size: 1.2rem;
+  }
 }
 header div button, header div .btn--secondary {
-  margin-top: 2rem;
+  margin-top: 3rem !important;
   padding: 1rem 2rem;
   margin: auto;
   display: flex;
@@ -201,25 +241,55 @@ header div button, header div .btn--secondary {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
+  box-shadow: -2px -2px #fff;
 }
 
 section {
-  padding-block: 4rem;
+  padding-block: 4rem 1rem;
   margin-block: 4rem;
+}
+@media only screen and (max-width: 800px) {
+  section {
+    padding-block: 2rem;
+    margin-block: 2rem;
+  }
 }
 section #section {
   margin: auto;
   width: 80%;
-  display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr;
   line-height: 1.7;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-start;
+}
+section #section div {
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  section #section {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 section #section h1 {
   font-size: 2.5rem;
 }
+@media only screen and (max-width: 800px) {
+  section #section h1 {
+    font-size: 1.5rem;
+  }
+}
 section #section p {
   width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  section #section p {
+    width: 100%;
+  }
 }
 section #section .notes {
   margin: auto;
@@ -234,6 +304,11 @@ section #section img {
   border-radius: 2rem;
   width: 80%;
   margin: auto;
+}
+@media only screen and (max-width: 800px) {
+  section #section img {
+    width: 100%;
+  }
 }
 
 footer {
@@ -252,9 +327,21 @@ footer #footer {
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   justify-content: space-between;
+}
+@media only screen and (max-width: 800px) {
+  footer #footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+  }
 }
 footer #footer .socials {
   margin: auto;
@@ -279,7 +366,7 @@ footer #footer h3 {
 }
 
 #miniSection {
-  background-color: #BDD9E2;
+  background-color: #1B201E;
   padding-block: 4rem;
   margin-block: 3rem;
 }
@@ -294,7 +381,7 @@ footer #footer h3 {
   flex: 1;
 }
 #miniSection .mini--section h2 {
-  color: #1B201E;
+  color: #fff;
 }
 #miniSection .mini--section button, #miniSection .mini--section .btn--secondary {
   margin: auto;
@@ -302,6 +389,56 @@ footer #footer h3 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  background-color: #fff;
+  color: #1B201E;
+}
+#miniSection .mini--section .socials {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+
+#contactContainer {
+  padding-block: 3rem;
+  margin-block: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  #contactContainer {
+    padding-block: 2rem;
+    margin-block: 2rem;
+  }
+}
+#contactContainer #contact {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  #contactContainer #contact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#contactContainer #contact p {
+  width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  #contactContainer #contact p {
+    width: 90%;
+  }
+}
+#contactContainer #contact form {
+  width: 100%;
+  border: solid #D6D7D9;
+}
+#contactContainer #contact form button, #contactContainer #contact form .btn--secondary {
+  width: 100%;
 }
 
 * {
@@ -332,7 +469,7 @@ form {
   gap: 1rem;
   gap: 1rem;
   padding: 2rem 1rem;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 0.5rem;
 }

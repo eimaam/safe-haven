@@ -19,7 +19,7 @@ const Nav = () => {
                     <Link to="/">Services</Link>
                 </li>
                 <li>
-                    <Link to="/">Book Now</Link>
+                    <Link to="/">Book</Link>
                 </li>
             </ul>
             <div>
