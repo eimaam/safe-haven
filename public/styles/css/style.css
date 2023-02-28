@@ -315,6 +315,12 @@ section #section--right img, section #section--left img {
 section #section--left {
   flex-direction: row-reverse;
 }
+@media only screen and (max-width: 800px) {
+  section #section--left {
+    width: 90%;
+    flex-direction: column;
+  }
+}
 
 footer {
   background-color: #BDD9E2;

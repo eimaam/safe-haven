@@ -62,5 +62,10 @@ section{
     #section--left{
         @extend #section--right;
         flex-direction: row-reverse;
+
+        @include mobile{
+            width: 90%;
+            flex-direction: column;
+        }
     }
 }
