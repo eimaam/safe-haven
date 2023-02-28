@@ -254,7 +254,7 @@ section {
     margin-block: 2rem;
   }
 }
-section #section {
+section #section--right, section #section--left {
   margin: auto;
   width: 80%;
   gap: 1rem;
@@ -265,33 +265,34 @@ section #section {
   align-items: center;
   gap: 1rem;
   align-items: flex-start;
+  justify-content: flex-start;
 }
-section #section div {
+section #section--right div, section #section--left div {
   flex: 1;
 }
 @media only screen and (max-width: 800px) {
-  section #section {
+  section #section--right, section #section--left {
     width: 90%;
     flex-direction: column;
   }
 }
-section #section h1 {
+section #section--right h1, section #section--left h1 {
   font-size: 2.5rem;
 }
 @media only screen and (max-width: 800px) {
-  section #section h1 {
+  section #section--right h1, section #section--left h1 {
     font-size: 1.5rem;
   }
 }
-section #section p {
+section #section--right p, section #section--left p {
   width: 80%;
 }
 @media only screen and (max-width: 800px) {
-  section #section p {
+  section #section--right p, section #section--left p {
     width: 100%;
   }
 }
-section #section .notes {
+section #section--right .notes, section #section--left .notes {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -299,16 +300,20 @@ section #section .notes {
   align-items: center;
   gap: 1rem;
   align-items: flex-start;
+  justify-content: flex-start;
 }
-section #section img {
+section #section--right img, section #section--left img {
   border-radius: 2rem;
   width: 80%;
   margin: auto;
 }
 @media only screen and (max-width: 800px) {
-  section #section img {
+  section #section--right img, section #section--left img {
     width: 100%;
   }
+}
+section #section--left {
+  flex-direction: row-reverse;
 }
 
 footer {
@@ -439,6 +444,70 @@ footer #footer h3 {
 }
 #contactContainer #contact form button, #contactContainer #contact form .btn--secondary {
   width: 100%;
+}
+
+.card {
+  width: 180px;
+  background-color: #BDD9E2;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 140px;
+  }
+}
+.card img {
+  width: 100px;
+  height: auto;
+}
+@media only screen and (max-width: 800px) {
+  .card img {
+    width: 60px;
+  }
+}
+.card h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1B201E;
+}
+@media only screen and (max-width: 800px) {
+  .card h3 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-overflow: clip;
+  }
+}
+
+#services {
+  background-color: #1B201E;
+  padding-block: 2rem;
+  margin-block: 2rem;
+}
+#services .services {
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+#services .services h2 {
+  margin-bottom: 2rem;
+}
+#services .services .card--section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  #services .services .card--section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 * {
