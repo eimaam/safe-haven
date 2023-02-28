@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <footer>
       <div id='footer'>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <h3>SafeHaven</h3>
           <p>SafeHaven is home to an amazing experience! We pride ourselves as the best with over a million of positive reviews both offline and online from our Customers.</p>
           <p>The best place one can be to have an amazing time in Diusburg!</p>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <h3>Connect with us:</h3>
           <div className='socials'>
             <h4><MdMarkEmailRead /></h4>
@@ -23,7 +23,7 @@ const Footer = () => {
             <h4><FaInstagram /></h4>
           </div>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <h3>Company:</h3>
           <ul>
             <li><Link>Privacy Policy</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
             <li><Link>API</Link></li>
           </ul>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <h3>Quick Links:</h3>
           <ul>
             <li><Link>Resources</Link></li>
