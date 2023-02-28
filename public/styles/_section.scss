@@ -1,0 +1,33 @@
+section{
+    padding-block: 4rem;
+    margin-block: 4rem;
+    
+    #section{
+        margin: auto;
+        width: 80%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        line-height: 1.7;
+
+        h1{
+            font-size: 2.5rem
+        }
+
+        p{
+            width: 80%;
+        }
+
+        .notes{
+            @include flex-col;
+            align-items: flex-start;
+        }
+
+
+        img{
+            border-radius: 2rem;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

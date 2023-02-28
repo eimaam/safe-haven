@@ -1,0 +1,19 @@
+#miniSection{
+    background-color: $primary;
+    padding-block: 4rem;
+    margin-block: 3rem;
+
+    .mini--section{
+        width: 80%;
+        @include flex-col;
+        flex:1;
+
+        h2{
+            color: $dark;
+        }
+
+        button{
+            @include flex-row;
+        }
+    }
+}
